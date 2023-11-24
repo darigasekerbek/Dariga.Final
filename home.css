@@ -1,0 +1,162 @@
+@font-face {
+    font-family: Pearl;
+    src: url(fonts/TAN-PEARL.ttf);
+  }
+  @font-face {
+    font-family: Lora;
+    src: url(fonts/Lora-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-MediumItalic.ttf);
+  }
+
+  body {
+    background-color: rgb(6, 26, 64);
+  }
+  
+  .header_name {
+    font-family: Pearl;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(245, 244, 235);
+  }
+  .header_navs {
+    padding-top: 15px;
+  }
+  .header_navs p {
+    font-family: Pearl;
+    text-align: center;
+  }
+  .header_navs a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(245, 244, 235);
+  }
+  .header_navs a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(245, 244, 235);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.7s ease;
+  }
+ .header_navs a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1300px; 
+    margin: 0 auto; 
+  }
+  video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .video-container h2 {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    color: rgb(245, 244, 235);
+    font-size: 60px;
+    font-family: Lora;
+  }
+
+  #MossiCollab {
+    margin-top: 40px;
+  }
+
+  .firstHalf {
+    margin-right: 30px;
+  }
+  .firstHalf hr{
+    border-top: 3px solid white;
+    font-weight: bold;
+    opacity: 1.0;
+    animation: lineAnimationTop 4s linear;
+  }
+  .firstHalf h3 {
+    font-family: Pearl;
+    color: rgb(245, 244, 235);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .firstHalf img {
+    border-radius: 5px;
+    width: 600px;
+  }
+
+  .secondHalf h5 {
+    font-family: Lora;
+    color: rgb(245, 244, 235);
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  .secondHalf img {
+    border-radius: 5px;
+    width: 90%;
+    height: 70%;
+  }
+  .secondHalf h1 {
+    color: rgb(245, 244, 235);
+    font-family: Pearl;
+    text-align: right;
+    margin-top: 40px;
+  }
+  .secondHalf hr {
+    border-top: 3px solid white;
+    font-weight: bold;
+    opacity: 1.0;
+    animation: lineAnimationBottom 4s linear;
+  }
+
+  @keyframes lineAnimationTop {
+    0% {
+      transform: translateX(100%); 
+  }
+  100% {
+      transform: translateX(0%); 
+    }
+  }
+  @keyframes lineAnimationBottom {
+    0% {
+      transform: translateX(-100%); 
+  }
+  100% {
+      transform: translateX(0%); 
+    }
+  }
+
+
+  footer {
+    font-family: Lora;
+    border-radius: 5px;
+  }
+  footer h5 {
+    font-family: Pearl;
+    color: rgb(245, 244, 235);
+  }
+  footer a {
+    text-decoration: none;
+  }
+  footer .Subscribe {
+    border-color: white;
+    color: rgb(245, 244, 235);
+    transition: 1s;
+  }
+  footer .Subscribe:hover {
+    color: rgb(6, 26, 64);
+    background-color: rgb(245, 244, 235);
+  }  
